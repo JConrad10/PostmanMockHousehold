@@ -8,6 +8,20 @@
 	"item": [
 		{
 			"name": "Get Owned Books",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6993f2be-b4fd-4e00-adbb-bfaf83a4f4e0",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
 			"request": {
 				"auth": {
 					"type": "basic",
@@ -25,24 +39,23 @@
 					]
 				},
 				"method": "GET",
-				"header": [
-					{
-						"key": "x-mock-response-code",
-						"value": "418"
-					}
-				],
+				"header": [],
 				"body": {
 					"mode": "raw",
 					"raw": ""
 				},
 				"url": {
-					"raw": "https://e16422a9-987e-4de4-ac70-062ac9b23eb8.mock.pstmn.io/households/5/ownedBooks",
+					"raw": "https://e16422a9-987e-4de4-ac70-062ac9b23eb8.mock.pstmn.io/households/2/ownedBooks",
+					"protocol": "https",
 					"host": [
-						"https://e16422a9-987e-4de4-ac70-062ac9b23eb8.mock.pstmn.io"
+						"e16422a9-987e-4de4-ac70-062ac9b23eb8",
+						"mock",
+						"pstmn",
+						"io"
 					],
 					"path": [
 						"households",
-						"5",
+						"2",
 						"ownedBooks"
 					]
 				},
@@ -50,7 +63,7 @@
 			},
 			"response": [
 				{
-					"id": "82d7f43f-3541-4efc-9091-1bb5b5d86be7",
+					"id": "fafe7763-5246-4840-b098-4ac3fdaf0fb6",
 					"name": "Default",
 					"originalRequest": {
 						"method": "GET",
@@ -61,8 +74,12 @@
 						},
 						"url": {
 							"raw": "https://e16422a9-987e-4de4-ac70-062ac9b23eb8.mock.pstmn.io/households/1/ownedBooks",
+							"protocol": "https",
 							"host": [
-								"https://e16422a9-987e-4de4-ac70-062ac9b23eb8.mock.pstmn.io"
+								"e16422a9-987e-4de4-ac70-062ac9b23eb8",
+								"mock",
+								"pstmn",
+								"io"
 							],
 							"path": [
 								"households",
@@ -81,7 +98,7 @@
 					"body": "[\n\t{\n\t\"id\": 1,\n\t\"title\": \"Wat\",\n\t\"author\": \"JWC\"\n\t}\n]"
 				},
 				{
-					"id": "8f335ad8-e5ca-48bc-930d-132fb353350f",
+					"id": "340c3621-e45a-454c-a049-151a3b1e8159",
 					"name": "Second Household",
 					"originalRequest": {
 						"method": "GET",
@@ -116,7 +133,7 @@
 					"body": "[\n\t{\n\t\"id\": 2,\n\t\"title\": \"Don't Waste Your Life\",\n\t\"author\": \"John Piper\"\n},\n{\n\t\"id\": 3,\n\t\"title\": \"I Have No Idea What I'm Doing\",\n\t\"author\": \"Jordan Conrad\"\n}\n]"
 				},
 				{
-					"id": "3d22d356-3040-4d15-bf16-821933cddc1b",
+					"id": "ef0b8f33-28fe-4e9e-a88f-23160763b671",
 					"name": "Third Household",
 					"originalRequest": {
 						"method": "GET",
@@ -127,8 +144,12 @@
 						},
 						"url": {
 							"raw": "https://e16422a9-987e-4de4-ac70-062ac9b23eb8.mock.pstmn.io/households/3/ownedBooks",
+							"protocol": "https",
 							"host": [
-								"https://e16422a9-987e-4de4-ac70-062ac9b23eb8.mock.pstmn.io"
+								"e16422a9-987e-4de4-ac70-062ac9b23eb8",
+								"mock",
+								"pstmn",
+								"io"
 							],
 							"path": [
 								"households",
@@ -226,7 +247,7 @@
 					"body": "[{\n\t\"id\": 4,\n\t\"title\": \"This Is A Thing\",\n\t\"author\": \"Jordan William Conrad\"\n}]"
 				},
 				{
-					"id": "e92688da-8acd-4782-b517-3947d4ec3d61",
+					"id": "ec5b71f9-c895-400f-a82d-a80156eed09b",
 					"name": "Server Error",
 					"originalRequest": {
 						"method": "GET",
@@ -237,8 +258,12 @@
 						},
 						"url": {
 							"raw": "https://e16422a9-987e-4de4-ac70-062ac9b23eb8.mock.pstmn.io/households/5/ownedBooks",
+							"protocol": "https",
 							"host": [
-								"https://e16422a9-987e-4de4-ac70-062ac9b23eb8.mock.pstmn.io"
+								"e16422a9-987e-4de4-ac70-062ac9b23eb8",
+								"mock",
+								"pstmn",
+								"io"
 							],
 							"path": [
 								"households",
@@ -339,14 +364,32 @@
 		},
 		{
 			"name": "Get Households",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "bf90c8f5-6fef-49e4-a22e-da7dcc20eb8a",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
 				"body": {},
 				"url": {
 					"raw": "https://e16422a9-987e-4de4-ac70-062ac9b23eb8.mock.pstmn.io/households",
+					"protocol": "https",
 					"host": [
-						"https://e16422a9-987e-4de4-ac70-062ac9b23eb8.mock.pstmn.io"
+						"e16422a9-987e-4de4-ac70-062ac9b23eb8",
+						"mock",
+						"pstmn",
+						"io"
 					],
 					"path": [
 						"households"
@@ -356,7 +399,7 @@
 			},
 			"response": [
 				{
-					"id": "c9ead08b-5541-4e57-a84b-f1726eb1a727",
+					"id": "2caaca9c-c614-46a2-8c98-6bf2d3eaf498",
 					"name": "Get Households",
 					"originalRequest": {
 						"method": "GET",
