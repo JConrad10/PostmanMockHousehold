@@ -63,7 +63,7 @@
 			},
 			"response": [
 				{
-					"id": "ab4b6d91-01a6-4d50-9bbf-0e00db8bbb59",
+					"id": "e1b59d78-7fb8-475c-9332-c29ec6f31e9b",
 					"name": "Default",
 					"originalRequest": {
 						"method": "GET",
@@ -98,7 +98,7 @@
 					"body": "[\n\t{\n\t\"id\": 1,\n\t\"title\": \"Wat\",\n\t\"author\": \"JWC\"\n\t}\n]"
 				},
 				{
-					"id": "d25b3f4c-9dc9-4d6d-a30c-b03d56df4eb2",
+					"id": "474c97b2-d3d1-43ec-824c-24c80f108099",
 					"name": "Second Household",
 					"originalRequest": {
 						"method": "GET",
@@ -133,7 +133,7 @@
 					"body": "[\n\t{\n\t\"id\": 2,\n\t\"title\": \"Don't Waste Your Life\",\n\t\"author\": \"John Piper\"\n},\n{\n\t\"id\": 3,\n\t\"title\": \"I Have No Idea What I'm Doing\",\n\t\"author\": \"Jordan Conrad\"\n}\n]"
 				},
 				{
-					"id": "923267d4-1c70-4d4d-986d-6b49d2d93de0",
+					"id": "5dcf667e-61a9-4fbe-b191-ba26d4643155",
 					"name": "Third Household",
 					"originalRequest": {
 						"method": "GET",
@@ -247,7 +247,7 @@
 					"body": "[{\n\t\"id\": 4,\n\t\"title\": \"This Is A Thing\",\n\t\"author\": \"Jordan William Conrad\"\n}]"
 				},
 				{
-					"id": "8d0777ea-b29e-4922-8b90-f3ef87aa4a5c",
+					"id": "4c7bce91-29be-4ec2-9268-57f43a4e7173",
 					"name": "Server Error",
 					"originalRequest": {
 						"method": "GET",
@@ -419,7 +419,7 @@
 			},
 			"response": [
 				{
-					"id": "3a4213f2-7f17-4072-a045-b705429268f8",
+					"id": "03e786d5-ab2c-45ad-8d4a-b87471dd2f18",
 					"name": "Default",
 					"originalRequest": {
 						"method": "GET",
@@ -454,7 +454,7 @@
 					"body": "[\n\t{\n\t\"id\": 1,\n\t\"title\": \"Wat\",\n\t\"author\": \"JWC\"\n\t}\n]"
 				},
 				{
-					"id": "3759fc66-ab0d-42f1-85c6-c02ee3cd77a7",
+					"id": "80219a18-5d69-4c94-b66d-8bda4985e87f",
 					"name": "Second Household",
 					"originalRequest": {
 						"method": "GET",
@@ -489,7 +489,7 @@
 					"body": "[\n\t{\n\t\"id\": 2,\n\t\"title\": \"Don't Waste Your Life\",\n\t\"author\": \"John Piper\"\n},\n{\n\t\"id\": 3,\n\t\"title\": \"I Have No Idea What I'm Doing\",\n\t\"author\": \"Jordan Conrad\"\n}\n]"
 				},
 				{
-					"id": "5d918121-cc12-48f5-8429-966da8953535",
+					"id": "c09a84e7-c9ab-4fb7-9225-07b331676291",
 					"name": "Third Household",
 					"originalRequest": {
 						"method": "GET",
@@ -603,7 +603,7 @@
 					"body": "[{\n\t\"id\": 4,\n\t\"title\": \"This Is A Thing\",\n\t\"author\": \"Jordan William Conrad\"\n}]"
 				},
 				{
-					"id": "3990ed98-454f-4236-931b-8357eea54fb0",
+					"id": "9909d5f9-ffcc-42a9-956e-50e4f906ffe7",
 					"name": "Server Error",
 					"originalRequest": {
 						"method": "GET",
@@ -755,7 +755,7 @@
 			},
 			"response": [
 				{
-					"id": "0bb731d5-bdde-46ab-9303-c0b52fe12857",
+					"id": "1a087346-8924-4e3c-b86a-089027d4eb79",
 					"name": "Get Households",
 					"originalRequest": {
 						"method": "GET",
@@ -783,6 +783,104 @@
 					"cookie": [],
 					"responseTime": 0,
 					"body": "[\n\t{\n\t\t\"id\":1,\n\t\t\"name\" : \"Jordan's Household\",\n\t\t\"createdAt\" : \"2017-10-31T12:38:16.065Z\",\n\t\t\"updatedAt\" : \"2017-10-31T12:38:16.065Z\"\n\t},\n\t{\n\t\t\"id\":2,\n\t\t\"name\" : \"Bailey's Household\",\n\t\t\"createdAt\" : \"2017-10-31T12:38:16.065Z\",\n\t\t\"updatedAt\" : \"2017-10-31T12:38:16.065Z\"\n\t},\n\t{\n\t\t\"id\":3,\n\t\t\"name\" : \"Some Gal's Household\",\n\t\t\"createdAt\" : \"2017-10-31T12:38:16.065Z\",\n\t\t\"updatedAt\" : \"2017-10-31T12:38:16.065Z\"\n\t},\n\t{\n\t\t\"id\":4,\n\t\t\"name\" : \"Some Dude's Household\",\n\t\t\"createdAt\" : \"2017-10-31T12:38:16.065Z\",\n\t\t\"updatedAt\" : \"2017-10-31T12:38:16.065Z\"\n\t}\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Households Server Error",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "bf90c8f5-6fef-49e4-a22e-da7dcc20eb8a",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://e16422a9-987e-4de4-ac70-062ac9b23eb8.mock.pstmn.io/households",
+					"protocol": "https",
+					"host": [
+						"e16422a9-987e-4de4-ac70-062ac9b23eb8",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"households"
+					]
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "6a5ce379-896e-4ea4-81da-8a0f050dca6b",
+					"name": "Get Households",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://e16422a9-987e-4de4-ac70-062ac9b23eb8.mock.pstmn.io/households",
+							"protocol": "https",
+							"host": [
+								"e16422a9-987e-4de4-ac70-062ac9b23eb8",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"households"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "parsed",
+					"header": [],
+					"cookie": [],
+					"responseTime": 0,
+					"body": "[\n\t{\n\t\t\"id\":1,\n\t\t\"name\" : \"Jordan's Household\",\n\t\t\"createdAt\" : \"2017-10-31T12:38:16.065Z\",\n\t\t\"updatedAt\" : \"2017-10-31T12:38:16.065Z\"\n\t},\n\t{\n\t\t\"id\":2,\n\t\t\"name\" : \"Bailey's Household\",\n\t\t\"createdAt\" : \"2017-10-31T12:38:16.065Z\",\n\t\t\"updatedAt\" : \"2017-10-31T12:38:16.065Z\"\n\t},\n\t{\n\t\t\"id\":3,\n\t\t\"name\" : \"Some Gal's Household\",\n\t\t\"createdAt\" : \"2017-10-31T12:38:16.065Z\",\n\t\t\"updatedAt\" : \"2017-10-31T12:38:16.065Z\"\n\t},\n\t{\n\t\t\"id\":4,\n\t\t\"name\" : \"Some Dude's Household\",\n\t\t\"createdAt\" : \"2017-10-31T12:38:16.065Z\",\n\t\t\"updatedAt\" : \"2017-10-31T12:38:16.065Z\"\n\t}\n]"
+				},
+				{
+					"id": "ed16ba61-c4c2-4199-94ed-e119cca2debb",
+					"name": "Get Households (Server Error)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://e16422a9-987e-4de4-ac70-062ac9b23eb8.mock.pstmn.io/households",
+							"protocol": "https",
+							"host": [
+								"e16422a9-987e-4de4-ac70-062ac9b23eb8",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"households"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "",
+					"_postman_previewtype": "parsed",
+					"header": [],
+					"cookie": [],
+					"responseTime": 0,
+					"body": ""
 				}
 			]
 		}
