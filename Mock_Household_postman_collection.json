@@ -63,7 +63,11 @@
 			},
 			"response": [
 				{
+<<<<<<< HEAD
 					"id": "e1b59d78-7fb8-475c-9332-c29ec6f31e9b",
+=======
+					"id": "ab4b6d91-01a6-4d50-9bbf-0e00db8bbb59",
+>>>>>>> origin/Add_Book_3
 					"name": "Default",
 					"originalRequest": {
 						"method": "GET",
@@ -98,7 +102,11 @@
 					"body": "[\n\t{\n\t\"id\": 1,\n\t\"title\": \"Wat\",\n\t\"author\": \"JWC\"\n\t}\n]"
 				},
 				{
+<<<<<<< HEAD
 					"id": "474c97b2-d3d1-43ec-824c-24c80f108099",
+=======
+					"id": "d25b3f4c-9dc9-4d6d-a30c-b03d56df4eb2",
+>>>>>>> origin/Add_Book_3
 					"name": "Second Household",
 					"originalRequest": {
 						"method": "GET",
@@ -133,7 +141,11 @@
 					"body": "[\n\t{\n\t\"id\": 2,\n\t\"title\": \"Don't Waste Your Life\",\n\t\"author\": \"John Piper\"\n},\n{\n\t\"id\": 3,\n\t\"title\": \"I Have No Idea What I'm Doing\",\n\t\"author\": \"Jordan Conrad\"\n}\n]"
 				},
 				{
+<<<<<<< HEAD
 					"id": "5dcf667e-61a9-4fbe-b191-ba26d4643155",
+=======
+					"id": "923267d4-1c70-4d4d-986d-6b49d2d93de0",
+>>>>>>> origin/Add_Book_3
 					"name": "Third Household",
 					"originalRequest": {
 						"method": "GET",
@@ -247,7 +259,11 @@
 					"body": "[{\n\t\"id\": 4,\n\t\"title\": \"This Is A Thing\",\n\t\"author\": \"Jordan William Conrad\"\n}]"
 				},
 				{
+<<<<<<< HEAD
 					"id": "4c7bce91-29be-4ec2-9268-57f43a4e7173",
+=======
+					"id": "8d0777ea-b29e-4922-8b90-f3ef87aa4a5c",
+>>>>>>> origin/Add_Book_3
 					"name": "Server Error",
 					"originalRequest": {
 						"method": "GET",
@@ -419,7 +435,11 @@
 			},
 			"response": [
 				{
+<<<<<<< HEAD
 					"id": "03e786d5-ab2c-45ad-8d4a-b87471dd2f18",
+=======
+					"id": "3a4213f2-7f17-4072-a045-b705429268f8",
+>>>>>>> origin/Add_Book_3
 					"name": "Default",
 					"originalRequest": {
 						"method": "GET",
@@ -454,7 +474,11 @@
 					"body": "[\n\t{\n\t\"id\": 1,\n\t\"title\": \"Wat\",\n\t\"author\": \"JWC\"\n\t}\n]"
 				},
 				{
+<<<<<<< HEAD
 					"id": "80219a18-5d69-4c94-b66d-8bda4985e87f",
+=======
+					"id": "3759fc66-ab0d-42f1-85c6-c02ee3cd77a7",
+>>>>>>> origin/Add_Book_3
 					"name": "Second Household",
 					"originalRequest": {
 						"method": "GET",
@@ -489,7 +513,11 @@
 					"body": "[\n\t{\n\t\"id\": 2,\n\t\"title\": \"Don't Waste Your Life\",\n\t\"author\": \"John Piper\"\n},\n{\n\t\"id\": 3,\n\t\"title\": \"I Have No Idea What I'm Doing\",\n\t\"author\": \"Jordan Conrad\"\n}\n]"
 				},
 				{
+<<<<<<< HEAD
 					"id": "c09a84e7-c9ab-4fb7-9225-07b331676291",
+=======
+					"id": "5d918121-cc12-48f5-8429-966da8953535",
+>>>>>>> origin/Add_Book_3
 					"name": "Third Household",
 					"originalRequest": {
 						"method": "GET",
@@ -603,7 +631,11 @@
 					"body": "[{\n\t\"id\": 4,\n\t\"title\": \"This Is A Thing\",\n\t\"author\": \"Jordan William Conrad\"\n}]"
 				},
 				{
+<<<<<<< HEAD
 					"id": "9909d5f9-ffcc-42a9-956e-50e4f906ffe7",
+=======
+					"id": "3990ed98-454f-4236-931b-8357eea54fb0",
+>>>>>>> origin/Add_Book_3
 					"name": "Server Error",
 					"originalRequest": {
 						"method": "GET",
@@ -755,6 +787,7 @@
 			},
 			"response": [
 				{
+<<<<<<< HEAD
 					"id": "1a087346-8924-4e3c-b86a-089027d4eb79",
 					"name": "Get Households",
 					"originalRequest": {
@@ -824,6 +857,9 @@
 			"response": [
 				{
 					"id": "6a5ce379-896e-4ea4-81da-8a0f050dca6b",
+=======
+					"id": "0bb731d5-bdde-46ab-9303-c0b52fe12857",
+>>>>>>> origin/Add_Book_3
 					"name": "Get Households",
 					"originalRequest": {
 						"method": "GET",
