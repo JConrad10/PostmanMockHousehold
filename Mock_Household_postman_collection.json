@@ -63,7 +63,11 @@
 			},
 			"response": [
 				{
+<<<<<<< HEAD
 					"id": "e1b59d78-7fb8-475c-9332-c29ec6f31e9b",
+=======
+					"id": "fed9c727-db38-4751-9124-82e2ffe512da",
+>>>>>>> Commit - AddBook
 					"name": "Default",
 					"originalRequest": {
 						"method": "GET",
@@ -98,7 +102,11 @@
 					"body": "[\n\t{\n\t\"id\": 1,\n\t\"title\": \"Wat\",\n\t\"author\": \"JWC\"\n\t}\n]"
 				},
 				{
+<<<<<<< HEAD
 					"id": "474c97b2-d3d1-43ec-824c-24c80f108099",
+=======
+					"id": "2be9d0bc-0b3f-4c8f-80a2-7f80663eaaff",
+>>>>>>> Commit - AddBook
 					"name": "Second Household",
 					"originalRequest": {
 						"method": "GET",
@@ -133,7 +141,11 @@
 					"body": "[\n\t{\n\t\"id\": 2,\n\t\"title\": \"Don't Waste Your Life\",\n\t\"author\": \"John Piper\"\n},\n{\n\t\"id\": 3,\n\t\"title\": \"I Have No Idea What I'm Doing\",\n\t\"author\": \"Jordan Conrad\"\n}\n]"
 				},
 				{
+<<<<<<< HEAD
 					"id": "5dcf667e-61a9-4fbe-b191-ba26d4643155",
+=======
+					"id": "466552a4-2c51-40a8-aeca-615a29bcb365",
+>>>>>>> Commit - AddBook
 					"name": "Third Household",
 					"originalRequest": {
 						"method": "GET",
@@ -247,7 +259,367 @@
 					"body": "[{\n\t\"id\": 4,\n\t\"title\": \"This Is A Thing\",\n\t\"author\": \"Jordan William Conrad\"\n}]"
 				},
 				{
+<<<<<<< HEAD
 					"id": "4c7bce91-29be-4ec2-9268-57f43a4e7173",
+=======
+					"id": "a199913d-eb86-4f7c-973a-c825eee76206",
+					"name": "Server Error",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://e16422a9-987e-4de4-ac70-062ac9b23eb8.mock.pstmn.io/households/5/ownedBooks",
+							"protocol": "https",
+							"host": [
+								"e16422a9-987e-4de4-ac70-062ac9b23eb8",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"households",
+								"5",
+								"ownedBooks"
+							]
+						}
+					},
+					"status": "Internal Server Error I'm a teapot (RFC 2324)",
+					"code": 500,
+					"_postman_previewlanguage": "html",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "",
+							"name": "Access-Control-Allow-Credentials",
+							"description": "Indicates whether or not the response to the request can be exposed when the credentials flag is true. When used as part of a response to a preflight request, this indicates whether or not the actual request can be made using credentials."
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "",
+							"name": "Access-Control-Allow-Headers",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "",
+							"name": "Access-Control-Allow-Methods",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "",
+							"name": "Access-Control-Expose-Headers",
+							"description": "Lets a server whitelist headers that browsers are allowed to access."
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip",
+							"name": "Content-Encoding",
+							"description": "The type of encoding used on the data."
+						},
+						{
+							"key": "Content-Length",
+							"value": "141",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 26 Jan 2018 23:24:45 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a2-aq2CrjYe7lYkiUIMCK2Urw\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "Server",
+							"value": "nginx",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"name": "Vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						}
+					],
+					"cookie": [],
+					"responseTime": 218,
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "Get Owned Books (Book 3)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6993f2be-b4fd-4e00-adbb-bfaf83a4f4e0",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://e16422a9-987e-4de4-ac70-062ac9b23eb8.mock.pstmn.io/households/2/ownedBooks",
+					"protocol": "https",
+					"host": [
+						"e16422a9-987e-4de4-ac70-062ac9b23eb8",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"households",
+						"2",
+						"ownedBooks"
+					]
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "68f94dff-93c1-457e-934c-db2aa73b01b9",
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://e16422a9-987e-4de4-ac70-062ac9b23eb8.mock.pstmn.io/households/1/ownedBooks",
+							"protocol": "https",
+							"host": [
+								"e16422a9-987e-4de4-ac70-062ac9b23eb8",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"households",
+								"1",
+								"ownedBooks"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"_postman_previewtype": "parsed",
+					"header": [],
+					"cookie": [],
+					"responseTime": 0,
+					"body": "[\n\t{\n\t\"id\": 1,\n\t\"title\": \"Wat\",\n\t\"author\": \"JWC\"\n\t}\n]"
+				},
+				{
+					"id": "d5260bbd-603d-409b-9868-8370c43a049c",
+					"name": "Second Household",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://e16422a9-987e-4de4-ac70-062ac9b23eb8.mock.pstmn.io/households/2/ownedBooks",
+							"protocol": "https",
+							"host": [
+								"e16422a9-987e-4de4-ac70-062ac9b23eb8",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"households",
+								"2",
+								"ownedBooks"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "parsed",
+					"header": [],
+					"cookie": [],
+					"responseTime": 0,
+					"body": "[\n\t{\n\t\"id\": 2,\n\t\"title\": \"Don't Waste Your Life\",\n\t\"author\": \"John Piper\"\n},\n{\n\t\"id\": 3,\n\t\"title\": \"I Have No Idea What I'm Doing\",\n\t\"author\": \"Jordan Conrad\"\n}\n]"
+				},
+				{
+					"id": "4fe19503-4e1b-44ba-b1dd-c62626d5532d",
+					"name": "Third Household",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://e16422a9-987e-4de4-ac70-062ac9b23eb8.mock.pstmn.io/households/3/ownedBooks",
+							"protocol": "https",
+							"host": [
+								"e16422a9-987e-4de4-ac70-062ac9b23eb8",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"households",
+								"3",
+								"ownedBooks"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "",
+							"name": "Access-Control-Allow-Credentials",
+							"description": "Indicates whether or not the response to the request can be exposed when the credentials flag is true. When used as part of a response to a preflight request, this indicates whether or not the actual request can be made using credentials."
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "",
+							"name": "Access-Control-Allow-Headers",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "",
+							"name": "Access-Control-Allow-Methods",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "",
+							"name": "Access-Control-Expose-Headers",
+							"description": "Lets a server whitelist headers that browsers are allowed to access."
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip",
+							"name": "Content-Encoding",
+							"description": "The type of encoding used on the data."
+						},
+						{
+							"key": "Content-Length",
+							"value": "140",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 26 Jan 2018 23:09:29 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"9e-XMcpK91ZXnWMBKiH4qThQg\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "Server",
+							"value": "nginx",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"name": "Vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						}
+					],
+					"cookie": [],
+					"responseTime": 320,
+					"body": "[{\n\t\"id\": 4,\n\t\"title\": \"This Is A Thing\",\n\t\"author\": \"Jordan William Conrad\"\n}]"
+				},
+				{
+					"id": "7ce96989-d559-4c27-985f-2d4a9d4c0ea9",
+>>>>>>> Commit - AddBook
 					"name": "Server Error",
 					"originalRequest": {
 						"method": "GET",
@@ -419,7 +791,11 @@
 			},
 			"response": [
 				{
+<<<<<<< HEAD
 					"id": "03e786d5-ab2c-45ad-8d4a-b87471dd2f18",
+=======
+					"id": "449e3018-4498-4530-8ee0-3de7c41d59f1",
+>>>>>>> Commit - AddBook
 					"name": "Default",
 					"originalRequest": {
 						"method": "GET",
@@ -454,7 +830,11 @@
 					"body": "[\n\t{\n\t\"id\": 1,\n\t\"title\": \"Wat\",\n\t\"author\": \"JWC\"\n\t}\n]"
 				},
 				{
+<<<<<<< HEAD
 					"id": "80219a18-5d69-4c94-b66d-8bda4985e87f",
+=======
+					"id": "6d5cecfc-bc94-4c98-8681-c3c15de3ca45",
+>>>>>>> Commit - AddBook
 					"name": "Second Household",
 					"originalRequest": {
 						"method": "GET",
@@ -489,7 +869,11 @@
 					"body": "[\n\t{\n\t\"id\": 2,\n\t\"title\": \"Don't Waste Your Life\",\n\t\"author\": \"John Piper\"\n},\n{\n\t\"id\": 3,\n\t\"title\": \"I Have No Idea What I'm Doing\",\n\t\"author\": \"Jordan Conrad\"\n}\n]"
 				},
 				{
+<<<<<<< HEAD
 					"id": "c09a84e7-c9ab-4fb7-9225-07b331676291",
+=======
+					"id": "bbd45ffd-8fb0-4bec-98a7-f83eeadaa263",
+>>>>>>> Commit - AddBook
 					"name": "Third Household",
 					"originalRequest": {
 						"method": "GET",
@@ -603,7 +987,11 @@
 					"body": "[{\n\t\"id\": 4,\n\t\"title\": \"This Is A Thing\",\n\t\"author\": \"Jordan William Conrad\"\n}]"
 				},
 				{
+<<<<<<< HEAD
 					"id": "9909d5f9-ffcc-42a9-956e-50e4f906ffe7",
+=======
+					"id": "bb6f0947-31d1-4f6b-94fe-f729e737bae8",
+>>>>>>> Commit - AddBook
 					"name": "Server Error",
 					"originalRequest": {
 						"method": "GET",
@@ -755,7 +1143,11 @@
 			},
 			"response": [
 				{
+<<<<<<< HEAD
 					"id": "1a087346-8924-4e3c-b86a-089027d4eb79",
+=======
+					"id": "fac6021e-0632-433f-9014-c84bcbd0044a",
+>>>>>>> Commit - AddBook
 					"name": "Get Households",
 					"originalRequest": {
 						"method": "GET",
