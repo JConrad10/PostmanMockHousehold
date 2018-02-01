@@ -64,6 +64,7 @@
 			"response": [
 				{
 					"id": "fed9c727-db38-4751-9124-82e2ffe512da",
+
 					"name": "Default",
 					"originalRequest": {
 						"method": "GET",
@@ -98,6 +99,7 @@
 					"body": "[\n\t{\n\t\"id\": 1,\n\t\"title\": \"Wat\",\n\t\"author\": \"JWC\"\n\t}\n]"
 				},
 				{
+
 					"id": "2be9d0bc-0b3f-4c8f-80a2-7f80663eaaff",
 					"name": "Second Household",
 					"originalRequest": {
@@ -134,6 +136,7 @@
 				},
 				{
 					"id": "466552a4-2c51-40a8-aeca-615a29bcb365",
+
 					"name": "Third Household",
 					"originalRequest": {
 						"method": "GET",
@@ -604,6 +607,7 @@
 				},
 				{
 					"id": "7ce96989-d559-4c27-985f-2d4a9d4c0ea9",
+
 					"name": "Server Error",
 					"originalRequest": {
 						"method": "GET",
@@ -775,6 +779,7 @@
 			},
 			"response": [
 				{
+
 					"id": "449e3018-4498-4530-8ee0-3de7c41d59f1",
 					"name": "Default",
 					"originalRequest": {
@@ -810,7 +815,9 @@
 					"body": "[\n\t{\n\t\"id\": 1,\n\t\"title\": \"Wat\",\n\t\"author\": \"JWC\"\n\t}\n]"
 				},
 				{
+
 					"id": "6d5cecfc-bc94-4c98-8681-c3c15de3ca45",
+
 					"name": "Second Household",
 					"originalRequest": {
 						"method": "GET",
@@ -846,6 +853,7 @@
 				},
 				{
 					"id": "bbd45ffd-8fb0-4bec-98a7-f83eeadaa263",
+
 					"name": "Third Household",
 					"originalRequest": {
 						"method": "GET",
@@ -959,7 +967,9 @@
 					"body": "[{\n\t\"id\": 4,\n\t\"title\": \"This Is A Thing\",\n\t\"author\": \"Jordan William Conrad\"\n}]"
 				},
 				{
+
 					"id": "bb6f0947-31d1-4f6b-94fe-f729e737bae8",
+
 					"name": "Server Error",
 					"originalRequest": {
 						"method": "GET",
@@ -1112,6 +1122,7 @@
 			"response": [
 				{
 					"id": "fac6021e-0632-433f-9014-c84bcbd0044a",
+
 					"name": "Get Households",
 					"originalRequest": {
 						"method": "GET",
@@ -1139,6 +1150,104 @@
 					"cookie": [],
 					"responseTime": 0,
 					"body": "[\n\t{\n\t\t\"id\":1,\n\t\t\"name\" : \"Jordan's Household\",\n\t\t\"createdAt\" : \"2017-10-31T12:38:16.065Z\",\n\t\t\"updatedAt\" : \"2017-10-31T12:38:16.065Z\"\n\t},\n\t{\n\t\t\"id\":2,\n\t\t\"name\" : \"Bailey's Household\",\n\t\t\"createdAt\" : \"2017-10-31T12:38:16.065Z\",\n\t\t\"updatedAt\" : \"2017-10-31T12:38:16.065Z\"\n\t},\n\t{\n\t\t\"id\":3,\n\t\t\"name\" : \"Some Gal's Household\",\n\t\t\"createdAt\" : \"2017-10-31T12:38:16.065Z\",\n\t\t\"updatedAt\" : \"2017-10-31T12:38:16.065Z\"\n\t},\n\t{\n\t\t\"id\":4,\n\t\t\"name\" : \"Some Dude's Household\",\n\t\t\"createdAt\" : \"2017-10-31T12:38:16.065Z\",\n\t\t\"updatedAt\" : \"2017-10-31T12:38:16.065Z\"\n\t}\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Households Server Error",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "bf90c8f5-6fef-49e4-a22e-da7dcc20eb8a",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://e16422a9-987e-4de4-ac70-062ac9b23eb8.mock.pstmn.io/households",
+					"protocol": "https",
+					"host": [
+						"e16422a9-987e-4de4-ac70-062ac9b23eb8",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"households"
+					]
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "6a5ce379-896e-4ea4-81da-8a0f050dca6b",
+					"name": "Get Households",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://e16422a9-987e-4de4-ac70-062ac9b23eb8.mock.pstmn.io/households",
+							"protocol": "https",
+							"host": [
+								"e16422a9-987e-4de4-ac70-062ac9b23eb8",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"households"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "parsed",
+					"header": [],
+					"cookie": [],
+					"responseTime": 0,
+					"body": "[\n\t{\n\t\t\"id\":1,\n\t\t\"name\" : \"Jordan's Household\",\n\t\t\"createdAt\" : \"2017-10-31T12:38:16.065Z\",\n\t\t\"updatedAt\" : \"2017-10-31T12:38:16.065Z\"\n\t},\n\t{\n\t\t\"id\":2,\n\t\t\"name\" : \"Bailey's Household\",\n\t\t\"createdAt\" : \"2017-10-31T12:38:16.065Z\",\n\t\t\"updatedAt\" : \"2017-10-31T12:38:16.065Z\"\n\t},\n\t{\n\t\t\"id\":3,\n\t\t\"name\" : \"Some Gal's Household\",\n\t\t\"createdAt\" : \"2017-10-31T12:38:16.065Z\",\n\t\t\"updatedAt\" : \"2017-10-31T12:38:16.065Z\"\n\t},\n\t{\n\t\t\"id\":4,\n\t\t\"name\" : \"Some Dude's Household\",\n\t\t\"createdAt\" : \"2017-10-31T12:38:16.065Z\",\n\t\t\"updatedAt\" : \"2017-10-31T12:38:16.065Z\"\n\t}\n]"
+				},
+				{
+					"id": "ed16ba61-c4c2-4199-94ed-e119cca2debb",
+					"name": "Get Households (Server Error)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://e16422a9-987e-4de4-ac70-062ac9b23eb8.mock.pstmn.io/households",
+							"protocol": "https",
+							"host": [
+								"e16422a9-987e-4de4-ac70-062ac9b23eb8",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"households"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "",
+					"_postman_previewtype": "parsed",
+					"header": [],
+					"cookie": [],
+					"responseTime": 0,
+					"body": ""
 				}
 			]
 		}
