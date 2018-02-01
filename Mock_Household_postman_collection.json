@@ -63,11 +63,7 @@
 			},
 			"response": [
 				{
-<<<<<<< HEAD
 					"id": "e1b59d78-7fb8-475c-9332-c29ec6f31e9b",
-=======
-					"id": "fed9c727-db38-4751-9124-82e2ffe512da",
->>>>>>> Commit - AddBook
 					"name": "Default",
 					"originalRequest": {
 						"method": "GET",
